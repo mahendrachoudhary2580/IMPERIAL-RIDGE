@@ -152,6 +152,7 @@
           /* --- Review Section Styles --- */
   .review-title {
     margin-bottom: 2rem;
+   color: white;
   }
 
   #reviewForm {
