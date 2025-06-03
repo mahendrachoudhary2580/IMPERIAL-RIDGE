@@ -79,6 +79,9 @@
             margin: 0 auto;
             transform: translateY(-50%);
         }
+       .booking .b-btn{
+            cursor: pointer;
+       }
         .b-date,.b-rooms,.b-guests,.b-btn{
             display: flex;
             justify-content: space-between;
