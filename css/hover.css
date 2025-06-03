@@ -1,0 +1,9 @@
+.nature img, .rooms img {
+  transition: transform 0.7s ease; /* smooth transition */
+  cursor: pointer; /* optional, shows it's interactive */
+}
+
+.nature img:hover, .rooms img:hover {
+  transform: scale(1.1); /* zoom in */
+  z-index: 2; /* to make sure zoomed image overlaps others */
+}

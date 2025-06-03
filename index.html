@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMPERIAL RIDGE MAHENDRA</title>
+    <link rel="icon" href="images/favicon1.png" type="image/png">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/responshive.css">
+      <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/font.css">
+</head>
+<body>
+  <nav class="navbar">
+  <div class="nav-logo">IMPERIAL RIDGE</div>
+  <button class="nav-toggle" onclick="toggleNav()">☰</button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#nature">Nature</a></li>
+    <li><a href="#rooms">Rooms</a></li>
+    <li><a href="#reviews-section">Review</a></li>
+  </ul>
+</nav>
+
+    <div class="hero" id="home">
+        <h1 class="marcellus-regular">Private Island Resort</h1>
+        <p>The seaside haven of warmth, tranquility and restoration</p>
+    </div>
+    <div class="body">
+    <div class="booking-wrapper">
+  <button class="toggle-booking-btn" onclick="toggleBooking()">Check Availability</button>
+  <div class="booking">
+    <div class="b-date">Check In <input type="date" name="date" id="date"></div>
+    <div class="b-rooms">Rooms 
+      <select name="room" id="room">
+        <option>1</option><option>2</option><option>3</option>
+        <option>4</option><option>5</option><option>6</option>
+      </select>
+    </div>
+    <div class="b-guests">Guests 
+      <select name="guest" id="guest">
+        <option>1</option><option>2</option><option>3</option>
+        <option>4</option><option>5</option><option>6</option>
+      </select> 
+    </div>
+    <input class="b-btn" type="button" value="Check Availability">
+  </div>
+</div>
+
+    <div class="logo">
+        <img src="images/favicon.png" alt="" srcset="">
+    </div>
+    <div class="intro">
+    <h1>In the Heart of the South Pacific,</h1><h1>Outstanding Views</h1>
+    <p class="host">Nestled in the heart of the Pacific Islands resort, on the edge of a tranquil and beautiful Garden Island,</p>
+    <p class="host">CozyStay is a haven of warmth, tranquility and rejuvenation. Bathed in brilliant sunshine and clear skies, it</p>
+    <p class="host">offers stunning views of palm-lined beaches and gorgeous coral reefs.</p>
+    </div>
+    <div class="nature" id="nature">
+        <img src="images/nature1.jpg" alt="" srcset="">
+        <img src="images/nature2.jpg" alt="" srcset="">
+        <img src="images/nature3.jpg" alt="" srcset="">
+        <img src="images/nature4.jpg" alt="" srcset="">
+    </div>
+    <div>Inspired by our history, surrounded by nature and designed to
+        offer a different experience</div>
+    <div class="hero2"></div>
+    <div><p>Enjoy World-class Stay Experience</p>
+    <h2>The Accommodations</h2></div>
+    <div class="rooms" id="rooms">
+        <div class="room1"><img src="images/room1.jpg" alt="">
+            <h2>Premier Oceanview Villa </h2>
+        </div>
+        <div class="room2"><img src="images/room2.jpg" alt="">
+            <h2>Deluxe Hilltop Residence</h2>
+        </div>
+        <div class="room3"><img src="images/room3.jpg" alt="">
+            <h2>Premier Beachfront Suite</h2>
+        </div>
+        <div class="room4"><img src="images/room4.jpg" alt="">
+            <h2>Grand Oceanview Residence</h2>
+        </div>
+    </div>
+     <div class="hero3" id="reviews-section">
+      <h2 class="review-title">Customer Reviews</h2>
+
+      <form id="reviewForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <select id="rating" required>
+          <option value="">Rate your stay</option>
+          <option value="5">★★★★★</option>
+          <option value="4">★★★★☆</option>
+          <option value="3">★★★☆☆</option>
+          <option value="2">★★☆☆☆</option>
+          <option value="1">★☆☆☆☆</option>
+        </select>
+        <textarea id="comment" placeholder="Write a comment..." rows="3" required></textarea>
+        <button type="submit">Submit Review</button>
+      </form>
+
+      <div id="reviewList"></div>
+    </div>
+    <footer class="footer">
+  <p>&copy; 2025 <b>IMPERIAL RIDGE</b>. All rights reserved. Design and created by <b>Mahendra Choudhary.</b></p>
+</footer>
+
+</div>
+<script src="review.js"></script>
+<script src="nav.js"></script>
+</body>
+</html>

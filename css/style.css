@@ -1,0 +1,201 @@
+  *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+  .navbar {
+  background-color: #53624E;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+  .hero{
+        background-image: url("../images/hero.jpg");
+  /*              ↑ add “.. /” here to go from css/ → images/ */
+      background-size: cover;
+      background-position: center;
+      height: 93vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: rgb(0, 0, 0);
+      text-align: center;
+        }
+        /* Toggle button */
+        .toggle-booking-btn {
+          display: none;
+          background-color: #53624E;
+          color: white;
+          padding: 1rem 2rem;
+          border: none;
+          font-size: 1rem;
+          margin: 1rem auto;
+          border-radius: 10px;
+          cursor: pointer;
+        }
+        .body{
+            background-color: #F3F3F0;
+        }
+        .booking{
+            height: 16.5vh;
+            padding: 5vh;
+            width: 87.5vw;
+            background-color: #53624E;
+            display: flex;
+            justify-content: space-around;
+            color: white;
+            margin: 0 auto;
+            transform: translateY(-50%);
+        }
+        .b-date,.b-rooms,.b-guests,.b-btn{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 20px;
+            padding-left: 30px;
+            border: 1px solid #B99D75;
+
+            width: 20rem;
+        }
+        input, select{
+            background-color: #53624E;
+            color: white;
+        }
+        .logo img{
+            width: 10vw;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+        }
+        .intro{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .nature, .rooms{
+            display: flex;
+            overflow: auto;
+            text-align: center;
+
+        }
+        .nature img{
+            width: 25vw;
+            margin: 30px;
+        }
+        
+        .rooms img{
+            width: 30vw;
+            margin: 25px;
+        }
+        .hero2{
+            background-image: url("../images/hero2.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 93vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+        .hero3{
+            background-image: url("../images/hero3.jpg");
+            background-size: cover;
+            background-position: center;
+            /* height: 93vh; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+          /* --- Review Section Styles --- */
+  .review-title {
+    margin-bottom: 2rem;
+  }
+
+  #reviewForm {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+  }
+
+  #reviewForm input,
+  #reviewForm select,
+  #reviewForm textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+  font-size: 1rem;
+  }
+
+  #reviewForm button {
+    padding: 0.5rem 1rem;
+    background-color: #53624e;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  #reviewList {
+    margin-top: 2rem;
+    width: 90%;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+  .footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #f2f2f2;
+  color: #333;
+  font-size: 0.9em;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid #ddd;
+}

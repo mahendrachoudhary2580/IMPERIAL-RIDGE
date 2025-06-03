@@ -1,0 +1,114 @@
+/* responsive */
+  @media (max-width: 1024px) {
+    .booking {
+      flex-direction: column;
+      height: auto;
+      padding: 2vh;
+      gap: 1rem;
+      width: 95vw;
+    }
+
+    .b-date, .b-rooms, .b-guests, .b-btn {
+      width: 100%;
+      font-size: 16px;
+      padding-left: 15px;
+    }
+
+    .logo img {
+      width: 20vw;
+    }
+
+    .nature img, .rooms img {
+      width: 80vw;
+      margin: 10px auto;
+    }
+
+    .nature, .rooms {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .review-title {
+      font-size: 1.2rem;
+    }
+
+    #reviewForm {
+      width: 95%;
+      padding: 1rem;
+    }
+
+    #reviewList {
+      width: 95%;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .hero, .hero2 {
+      height: 60vh;
+      padding: 1rem;
+    }
+    .hero3{
+        background-image: none;
+        /* height: 110vh; */
+    }
+
+    .hero h1, .intro h1 {
+      font-size: 1.5rem;
+    }
+
+    .b-date, .b-rooms, .b-guests, .b-btn {
+      font-size: 14px;
+    }
+
+    #reviewForm input,
+    #reviewForm select,
+    #reviewForm textarea {
+      font-size: 14px;
+    }
+
+    .logo img {
+      width: 40vw;
+    }
+    .booking-wrapper .booking {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+
+  .booking-wrapper.show .booking {
+    display: flex;
+  }
+
+  .toggle-booking-btn {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #53624E;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+}
